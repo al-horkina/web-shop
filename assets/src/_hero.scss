@@ -1,0 +1,21 @@
+.hero {
+  @include flex();
+  height: 100vh;
+
+  &__item {
+    @include flex-centered();
+    flex-basis: 25%;
+    background: center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-shadow: 4px 4px 6px rgba(150, 37, 30, 0.6);
+    transition: all .3s;
+
+    &:hover {
+      flex-basis: 100%;
+    }
+  }
+
+}
